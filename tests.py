@@ -1,6 +1,5 @@
-import math
-import sys
-from os import rename
+import requests
 
-name = input("Hello?")
-print("good", name)
+r = requests.get("https://www.daum.net")
+print(r.status_code)
+print(r.ok)
